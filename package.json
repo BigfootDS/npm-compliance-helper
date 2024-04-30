@@ -1,0 +1,12 @@
+{
+  "name": "npm-compliance-helper",
+  "version": "1.0.0",
+  "description": "Tool to help generate an NPM dependency \"bill of materials\" and confirm whether your dependencies are commercially-usable or not.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

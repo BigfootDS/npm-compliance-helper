@@ -42,6 +42,54 @@ Install this package using NPM:
 
 This is **NOT** a global package. Install it into a project!
 
+## Stored License Information
+
+This tool stores this information about common licenses:
+
+```json
+{
+	"licenseName":"",
+	"identifier":"",
+	"webpage":"",
+	"commercialUse":"",
+	"distribution":"",
+	"modification":"",
+	"patentUse":"",
+	"privateUse":"",
+	"discloseSource":"",
+	"legalNotice":"",
+	"networkUseIsDistribution":"",
+	"sameLicense":"",
+	"stateChanges":"",
+	"liability":"",
+	"trademarkUse":"",
+	"warranty":""
+}
+```
+
+The values of the keys are numbers, and can be either:
+
+- **unmentioned** - The package's license makes no mention of this property. 
+- **"permitted"** - The package's license explicitly permits usage relevant to this property. These are the light green circles on the `Choose a License` Appendix webpage.
+- **"condition"** - The package's license requires you to do a certain thing in order to be permitted to use the package. These are the light blue circles on the `Choose a License` Appendix webpage.
+- **"condition-special"** - The package's license requires you to do a certain thing in order to be permitted to use the package. This has additional conditions or information that require a human to acknowledge, such as "you don't need to display the license and copyright notice IF you are distributing this package as part of a compiled application binary file." These are the darkened blue circles on the `Choose a License` Appendix webpage.
+- **"limited"** - The license explicitly limits, forbids or does not provide anything relevant to this property. These are the red "Limitations" on the `Choose a License` Appendix webpage.
+
+These keys are an exception to the above:
+
+- "licenseName" - The full, human-readable name of the license. Should match the name from _Choose a License_'s Appendix page, [found here.](https://choosealicense.com/appendix/)
+- "identifier" - The identifier code declared in the SPDX license website, [found here.](https://spdx.org/licenses/)
+- "webpage" - The relevant webpage detailing the license, ideally on `spdx.org`'s website.
+
+
 ## How to use this tool
 
 Blah blah blah stuff in progress.
+
+### Command-line tool
+
+### JavaScript Import/Require
+
+
+
+

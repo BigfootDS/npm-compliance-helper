@@ -2,11 +2,27 @@
   "name": "npm-compliance-helper",
   "version": "1.0.0",
   "description": "Tool to help generate an NPM dependency \"bill of materials\" and confirm whether your dependencies are commercially-usable or not.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "licensecheck:summary": "license-checker --summary",
+    "licensecheck:filereport": "mkdir -p ./out && license-checker --json >> ./out/licenseReport.json"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": {
+    "name": "BigfootDS",
+    "email": "contact@bigfootds.com",
+    "url": "https://bigfootds.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BigfootDS/npm-compliance-helper.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^12.0.0",
+    "inquirer": "^9.2.20",
+    "license-checker": "^25.0.1",
+    "license-compatibility-checker": "^0.3.5"
+  }
 }

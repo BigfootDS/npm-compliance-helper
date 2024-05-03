@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node src/index.js",
     "licensecheck:summary": "license-checker --summary",
-    "licensecheck:filereport": "mkdir -p ./out && license-checker --json >> ./out/licenseReport.json"
+    "licensecheck:filereport": "mkdir -p ./out && license-checker --json >> ./out/licenseReport.json",
+    "licenseGenny": "generate-license-file --input ./package.json --output thirdpartylicenses --ci --overwrite"
   },
   "keywords": [],
   "author": {
@@ -21,8 +22,6 @@
   "license": "MIT",
   "dependencies": {
     "commander": "^12.0.0",
-    "inquirer": "^9.2.20",
-    "license-checker": "^25.0.1",
-    "license-compatibility-checker": "^0.3.5"
+    "generate-license-file": "^3.4.0"
   }
 }

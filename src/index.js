@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+const { getProjectLicenseInfo } = require('./projectLicenseInfo');
+
 
 
 
@@ -37,8 +39,10 @@ async function app(allowed = [], forbidden = [], customLicenseDataJsonPath = "")
 	} else {
 		// Do nothing, let the user configure and execute the app as a function themselves.
 		// console.log(`Running ${require('../package.json').name} as an imported function.`);
+		module.exports = {
+			getProjectLicenseInfo
+		}
 	}
 })();
 
 
-module.exports = app;

@@ -13,6 +13,7 @@ Don't come blaming us for your poor business decisions.
 ## Installation
 
 This package can be used as a dependency, with its functions imported into your dev or production or other code.
+
 Or, this package can be used as a command line tool.
 
 To install in your production dependencies, run this: 
@@ -21,7 +22,7 @@ To install in your production dependencies, run this:
 npm install @bigfootds/npm-compliance-helper
 ```
 
-To install in your production dependencies, run this: 
+To install in your dev dependencies, run this: 
 
 ```bash
 npm install --save-dev @bigfootds/npm-compliance-helper

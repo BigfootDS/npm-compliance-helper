@@ -1,13 +1,14 @@
 {
-  "name": "npm-compliance-helper",
+  "name": "@bigfootds/npm-compliance-helper",
   "version": "1.0.0",
   "description": "Tool to help generate an NPM dependency \"bill of materials\" and confirm whether your dependencies are commercially-usable or not.",
   "main": "src/index.js",
+  "bin":{
+    "@bigfootds/npm-compliance-helper":"./src/index.js"
+  },
   "scripts": {
-    "start": "node src/index.js",
-    "licensecheck:summary": "license-checker --summary",
-    "licensecheck:filereport": "mkdir -p ./out && license-checker --json >> ./out/licenseReport.json",
-    "licenseGenny": "generate-license-file --input ./package.json --output thirdpartylicenses --ci --overwrite"
+    "@bigfootds/nch/start": "node src/index.js",
+    "@bigfootds/nch/dev":"mkdir -p ./out && node src/index.js > ./out/apptesto.json"
   },
   "keywords": [],
   "author": {

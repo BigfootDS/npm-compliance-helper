@@ -6,7 +6,7 @@ const { partition } = require('./utilities/arrayPartition');
 
 
 /**
- * Process a projet's package.json file and create an organized object of its various dependencies and their licenses.
+ * Process a project's package.json file and create an organized object of its various dependencies and their licenses.
  * 
  * Each license is represented as an object containing the license text content (as `content`) and package dependencies that use that license (as `dependencies`);
  * 
